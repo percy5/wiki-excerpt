@@ -1,3 +1,10 @@
+/*
+
+jQuery wiki-excerpt extension by Prashant Acharekar
+
+*/
+
+
 (function ($) {
    $.fn.excerpt = function (option) {
 
@@ -161,19 +168,5 @@
    };
 
  })(jQuery);
-
-
-// wikipedia api urls
-
-// js example at https://gist.github.com/704540
-// url : "http://en.wikipedia.org/w/api.php?action=parse&format=json&page=shivaji&prop=text&uselang:en&rvparse=1&format=json&rvprop=content",
-// http://www.mediawiki.org/wiki/API:Query#Continuing_queries
-
-// google definitions
-
-// http://www.google.com/search?hl=en&q=shivaji&tbs=dfn:1
-
-//Wrap selected text in  tags with the class 'hl'
-//Take some action after (in this case, a simple alert)
 
 
