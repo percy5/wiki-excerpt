@@ -42,7 +42,7 @@ jQuery wiki-excerpt extension by Prashant Acharekar
      };
 
      // wiki def lookup
-     this.wikiApiUrl = "//en.wikipedia.org/w/api.php?action=query&prop=revisions&rvprop=content&rvsection=0&rvparse=0&format=json&titles=";
+     this.wikiApiUrl = (location.protocol === 'https:' ? 'https:' : 'http:') + "//en.wikipedia.org/w/api.php?action=query&prop=revisions&rvprop=content&rvsection=0&rvparse=0&format=json&titles=";
 
      this.fetchWikiText = function (word, callback) {
        var that = this;
@@ -152,6 +152,7 @@ jQuery wiki-excerpt extension by Prashant Acharekar
                    word = replaceAll(word, " ",  "_");
                    $this.bind("click", function () {
                                 that.defLookup(word);
+                                return false;
                               });
                  });
        this.createOverlayDiv();
