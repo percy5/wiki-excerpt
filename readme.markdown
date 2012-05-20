@@ -1,8 +1,8 @@
 # jQuery wiki-excerpt extension
 
-This jQuery extension fetches the excerpt (first paragraph) for a word from it's Wikipedia page. Have words on a HTML surrouned by a 'anchor' tag with some class. And with that class initialise wiki-excerpt, thats it.
+This jQuery extension fetches the excerpt (first paragraph) for a word from it's Wikipedia page. Have words on a HTML page surrouned by an 'anchor' tag with some class. And with that class initialise wiki-excerpt, thats it.
 
-For more on how to use, see `excerpt.html` file from the repo.
+For more on how to use, see `wiki-excerpt-usage.html` file from the repo.
 
 ## USAGE
 
