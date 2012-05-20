@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lan="en">
+  <head>
+    <title>
+      Wiki Defination fetch function
+    </title>
+    <link rel="stylesheet" href="define.css" type="text/css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="define.js"></script>
+    <style type="text/css">
+
+    </style>
+  </head>
+  <body>
+    <h1> Wiki Defination fetch function </h1>
+    <div id="container">
+      <br>
+      <a href="#" class="define">Shivaji</a>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <a href="#" class="define">No def fount example</a>
+      <br>
+      <br>
+      <br>
+      <br>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+      <br>
+      <a href="#" class="define">JQuery</a>
+      <br>
+      <br>
+      <a href="#" class="define">Local-Word</a>
+      <br>
+      <br>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+                            var defination = $(".define").excerpt();
+                            defination.addDefinition("Local-Word" ,
+                                                     "<b>Local Word</b>"
+                                                     + "<p> One can add the defination of a word locally using the .addDefination method</p>"
+                                                     + "<p>For Example : <br> <br> <span style='font-size:11px; font-family: monospace;'>"
+                                                     + "$(document).ready(function () { <br>"
+                                                     + "var defination = $('.define').defination(); <br> "
+                                                     + "defination.addDefination('_word_', '_word_defination_here_'); <br>"
+                                                     + "});"
+                                                     + "</span></p>");
+                          });
+    </script>
+  </body>
+</html>
