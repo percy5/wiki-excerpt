@@ -20,6 +20,7 @@ init JS:
     <script type="text/javascript">
         $(document).ready(function () {
                             var excerpt = $(".define").excerpt();
+                            // for locally adding definations
                             excerpt.addDefinition("_word_" , "_defination_");
                           });
     </script>
