@@ -19,14 +19,10 @@ jQuery wiki-excerpt extension by Prashant Acharekar
      // store definition locally
      this.addDefinition = function (word, definition) {
        wordDefs[word] = definition;
-       console.log(word);
-       console.log(wordDefs[word]);
-       // eval ("wordDefs." + word +" = definition");
      };
 
      // get locally stored def
      this.getDefinition = function (word) {
-       // return eval("wordDefs." + word);
        return wordDefs[word];
      };
 
@@ -168,5 +164,3 @@ jQuery wiki-excerpt extension by Prashant Acharekar
    };
 
  })(jQuery);
-
-
