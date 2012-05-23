@@ -64,7 +64,7 @@ jQuery wiki-excerpt extension by Prashant Acharekar
                       $("#wiki-text table").remove();
                       $('#wiki-text a').each(function (index, ele) {
                                                ele.href = ele.href.replace("file://" , "http://en.wikipedia.org");
-                                               ele.href = ele.href.replace("document.domain" , "http://en.wikipedia.org");
+                                               ele.href = ele.href.replace(document.location.host + "/wiki" , "http://en.wikipedia.org");
                                                ele.target="_blank";
                                              });
                       that.addDefinition (word, $('#wiki-text').html());
